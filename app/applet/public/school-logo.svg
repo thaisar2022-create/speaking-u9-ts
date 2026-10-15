@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#56176d"/>
+      <stop offset="70%" stop-color="#3d0a4e"/>
+      <stop offset="100%" stop-color="#2a0438"/>
+    </radialGradient>
+
+    <!-- Flower Petal Gradient -->
+    <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#fdfbf7"/>
+      <stop offset="100%" stop-color="#f4e4b5"/>
+    </linearGradient>
+
+    <!-- Flower Core Glow -->
+    <radialGradient id="flowerCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900"/>
+      <stop offset="40%" stop-color="#ffcc00"/>
+      <stop offset="85%" stop-color="#ffee66" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text Shadow Filter -->
+    <filter id="subtleDrop" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#180222" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="256" cy="256" r="250" fill="url(#bgGrad)" stroke="#671c82" stroke-width="2"/>
+
+  <!-- Background Thai Glyph Watermarks -->
+  <g opacity="0.08" fill="#ffffff" font-family="'Noto Sans Thai', sans-serif" font-weight="900">
+    <text x="60" y="110" font-size="72">ก</text>
+    <text x="180" y="90" font-size="80">ข</text>
+    <text x="350" y="120" font-size="76">ค</text>
+    <text x="430" y="220" font-size="84">ง</text>
+    <text x="420" y="380" font-size="78">จ</text>
+    <text x="320" y="460" font-size="82">ฉ</text>
+    <text x="180" y="470" font-size="75">ช</text>
+    <text x="70" y="410" font-size="80">ซ</text>
+    <text x="40" y="270" font-size="85">ญ</text>
+    <text x="240" y="300" font-size="120">ด</text>
+    <text x="120" y="210" font-size="65">ต</text>
+    <text x="350" y="250" font-size="70">ถ</text>
+    <text x="260" y="180" font-size="90">ท</text>
+    <text x="150" y="380" font-size="85">ธ</text>
+  </g>
+
+  <!-- Main Yellow Script "သူဇာ / THAISAR" Calligraphy -->
+  <g filter="url(#subtleDrop)">
+    <!-- First Character: သ with loop & lower hook -->
+    <!-- Outer curve of character 1 -->
+    <path d="M 80,270 C 70,240 85,210 115,200 C 130,195 150,200 160,215 C 170,200 195,195 210,210 C 228,228 226,262 208,285 C 196,300 178,308 158,308 C 146,308 138,304 130,296 L 126,345 C 125,360 135,366 148,366 C 158,366 164,360 162,354 C 160,348 152,348 150,344 C 148,340 156,336 164,342 C 174,350 170,372 152,374 C 132,376 114,364 116,336 L 122,285 C 105,296 87,290 80,270 Z 
+             M 112,230 C 98,236 94,256 102,268 C 110,278 128,276 138,264 C 146,254 144,236 132,230 C 126,227 118,227 112,230 Z
+             M 174,232 C 165,240 166,256 174,266 C 182,276 198,274 204,262 C 210,250 206,236 195,230 C 188,226 180,227 174,232 Z" 
+          fill="#ffea00"/>
+
+    <!-- Second Character: င်/ရ with tall elegant upward wave -->
+    <path d="M 230,265 C 230,230 250,210 270,210 C 285,210 295,222 292,238 C 288,255 272,264 256,260 C 252,258 250,266 254,272 C 262,284 278,285 288,272 C 294,264 295,245 292,225 C 290,200 300,165 315,145 C 318,140 325,148 322,156 C 312,185 304,220 306,245 C 310,290 280,312 250,310 C 235,309 230,290 230,265 Z
+             M 252,235 C 245,242 248,252 256,254 C 265,255 272,248 274,240 C 275,232 268,226 260,226 C 255,226 253,230 252,235 Z" 
+          fill="#ffea00"/>
+
+    <!-- Middle Connector / Marker: း / ะ -->
+    <path d="M 312,242 C 304,242 300,248 300,256 C 300,268 312,274 322,266 C 326,262 332,266 330,272 C 324,284 308,288 296,280 C 286,272 284,254 290,242 C 296,232 308,228 322,232 C 326,234 324,242 312,242 Z" 
+          fill="#ffea00"/>
+    <path d="M 342,242 C 334,242 330,248 330,256 C 330,268 342,274 352,266 C 356,262 362,266 360,272 C 354,284 338,288 326,280 C 316,272 314,254 320,242 C 326,232 338,228 352,232 C 356,234 354,242 342,242 Z" 
+          fill="#ffea00"/>
+
+    <!-- Fourth Character: တ / ဝ circular with loop -->
+    <path d="M 368,260 C 368,225 390,205 418,205 C 445,205 464,225 464,255 C 464,288 442,310 414,310 C 388,310 368,290 368,260 Z
+             M 390,260 C 390,278 400,292 415,292 C 432,292 442,278 442,258 C 442,238 430,224 415,224 C 398,224 390,240 390,260 Z
+             M 405,255 C 400,255 396,250 398,245 C 400,240 408,238 412,242 C 416,246 414,254 405,255 Z" 
+          fill="#ffea00"/>
+  </g>
+
+  <!-- White Plumeria / Frangipani Flower with Golden Yellow Center -->
+  <g transform="translate(142, 175) rotate(-15)">
+    <!-- Petal 1 (Top Left) -->
+    <path d="M 0,0 C -35,-25 -45,-55 -25,-75 C -5,-95 25,-75 20,-45 C 16,-25 8,-8 0,0 Z" fill="url(#petalGrad1)" filter="url(#subtleDrop)"/>
+    <!-- Petal 2 (Top Right) -->
+    <path d="M 0,0 C 15,-40 38,-65 65,-55 C 92,-45 85,-15 55,-2 C 35,6 15,2 0,0 Z" fill="url(#petalGrad1)" filter="url(#subtleDrop)"/>
+    <!-- Petal 3 (Right) -->
+    <path d="M 0,0 C 30,-5 65,15 65,45 C 65,75 35,80 15,55 C 3,40 2,18 0,0 Z" fill="url(#petalGrad1)" filter="url(#subtleDrop)"/>
+    <!-- Petal 4 (Bottom Left) -->
+    <path d="M 0,0 C 10,25 0,65 -25,75 C -50,85 -70,55 -55,30 C -45,12 -20,5 0,0 Z" fill="url(#petalGrad1)" filter="url(#subtleDrop)"/>
+    <!-- Petal 5 (Left) -->
+    <path d="M 0,0 C -25,10 -65,-5 -72,-30 C -80,-58 -52,-70 -32,-50 C -18,-35 -8,-15 0,0 Z" fill="url(#petalGrad1)" filter="url(#subtleDrop)"/>
+
+    <!-- Golden Center Glow and Petal Texture -->
+    <circle cx="0" cy="0" r="28" fill="url(#flowerCenter)"/>
+    <path d="M 0,0 L -5,-15 M 0,0 L 12,-10 M 0,0 L 14,8 M 0,0 L -6,14 M 0,0 L -14,-2" stroke="#ff7700" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>
